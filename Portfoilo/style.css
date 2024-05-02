@@ -1,0 +1,53 @@
+.innerbox {
+    padding: 30px;
+    background-color: #2b3240;
+    color: white;
+    border-radius:8%;
+}
+
+html {
+    background-color: #1b2029;
+}
+
+body {
+    font-family: 'League Spartan'; 
+    font-size: 16px;
+}
+
+.title {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    padding-left:20px;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 50;
+    height: 50;
+    
+}
+
+.resume_button {
+    background-color: rgb(12, 157, 214);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    text-decoration: none;
+    text-align:right;
+    display: block;
+    margin-left:auto;
+}
+
+.icon {
+    width: 10;
+    height: 10;
+}
