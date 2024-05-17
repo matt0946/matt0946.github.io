@@ -1,0 +1,23 @@
+{
+  "name": "matt0946.github.io",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "logic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt0946/matt0946.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt0946/matt0946.github.io/issues"
+  },
+  "homepage": "https://github.com/matt0946/matt0946.github.io#readme",
+  "dependencies": {
+    "react-typed": "^2.0.12"
+  }
+}

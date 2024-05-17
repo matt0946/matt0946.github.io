@@ -1,3 +1,17 @@
+window.onload = function() {
+    var introElement = document.querySelector('.intro-type'); // Selects the first element with the class 'intro'
+    if (introElement) {
+        var typed = new Typed(introElement, {
+            strings: ["Hello! My name is Matthew :)", "I am a UBC student!", "I am an aspiring developer!"],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: true
+        });
+    }
+}
+
+
+
 function about_collapse() {
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -34,4 +48,5 @@ function work_showTab(tabName) {
         });
     });
 }
+
 
