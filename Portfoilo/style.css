@@ -1,11 +1,12 @@
 .intro-innerbox {
     padding: 30px;
-    background-color: #2b3240;
+    background-color: rgb(43, 50, 64);
     color: white;
     border-radius:8%;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 html {
@@ -29,8 +30,7 @@ body {
 
 .headshot {
     border-radius: 50%;
-    width: 50;
-    height: 50;
+    height: 100;
     
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .about-collection {
-    color:rgb(16, 187, 255);
+    color:rgb(126, 210, 243);
     display: inline-block;
 }
 
@@ -98,15 +98,88 @@ body {
     font-size: 15px;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
     background-color: #ccc;
-  }
+}
   
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
+/* Style the collapsible content. Note: hidden by default */
+.content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
-  }
+}
+
+.work-outterbox {
+    display:flex;
+    padding:30px;
+    background-color: rgb(33, 38, 49);
+    color: white;
+    border-radius:8%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.work-innerbox-left {
+    padding-left: 0px;
+    display: inline-block;
+}
+
+.work-innerbox-right {
+    flex:1;
+    padding: 20px;
+    background-color: rgb(43, 50, 64);
+    color: white;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-boxtitle {
+    padding-top:10px
+}
+
+.workexperience {
+    display:flex;
+    padding: 10px;
+    background-color: rgb(33, 38, 49);
+    list-style-type: none;
+    line-height: 1;
+    font-size:15px;
+    transition: background-color 0.3s ease; /* Add this line */
+    border-radius: 5%;
+}
+.work-name-selection {
+    padding-top:15px;
+    padding-left:7px;
+}
+
+.work-logo-selection {
+    height:35px;
+}
+
+.workexperience:hover {
+    background-color: rgb(59, 82, 128); /* Replace with your desired color */
+}
+
+.work-header {
+    display: flex;
+    align-items: start;
+}
+
+.work-logo {
+    height:70px;
+    
+}
+
+.work-details-container {
+    display: block;
+    padding-left:20px
+}
+
+.work-description {
+    padding-top:10px;
+}
