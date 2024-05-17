@@ -1,8 +1,11 @@
-.innerbox {
+.intro-innerbox {
     padding: 30px;
     background-color: #2b3240;
     color: white;
     border-radius:8%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 html {
@@ -31,23 +34,79 @@ body {
     
 }
 
+.about {
+    padding: 10px;
+    background-color: rgba(40, 37, 37, 0.979);
+    font-family: monospace;
+    list-style-type: none;
+    line-height: 1;
+    font-size:15px;
+}
+
+.about-value {
+    color:rgb(205, 96, 255);
+    display: inline-block;
+}
+
+.about-row {
+    padding: 3px 5px 3px 20px; 
+    border-left: 1px solid rgb(73, 72, 62);
+}
+
+.about-collection {
+    color:rgb(16, 187, 255);
+    display: inline-block;
+}
+
 .resume_button {
-    background-color: rgb(12, 157, 214);
+    background-color: rgb(66, 140, 170);
     color: rgb(255, 255, 255);
-    border-radius: 4px;
+    border-radius: 8px;
     height: 40px;
     width: 80px;
-    text-align: center;
     font-size: 16px;
     font-weight: bold;
     line-height: 40px;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.resume_button a {
     text-decoration: none;
-    text-align:right;
-    display: block;
-    margin-left:auto;
+    color: inherit; 
 }
 
 .icon {
-    width: 10;
-    height: 10;
+    padding: 5px;
+    font-size: 20px;
+    color:rgba(217, 193, 228, 0.699);
 }
+
+.icon a {   
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-all {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
