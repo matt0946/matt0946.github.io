@@ -33,15 +33,24 @@ function about_collapse() {
 }
 
 function work_showTab(tabName) {
-    document.querySelectorAll('.workexperience').forEach(function(tab) {
+    var tabs = document.querySelectorAll('.workexperience');
+    tabs.forEach(function(tab) {
         tab.addEventListener('click', function() {
             var tabId = this.dataset.tab;
-    
+
+            // Remove the active class from all tabs
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active-tab');
+            });
+
+            // Add the active class to the clicked tab
+            this.classList.add('active-tab');
+
             // Hide all content
             document.querySelectorAll('.work-cont').forEach(function(content) {
                 content.style.display = 'none';
             });
-    
+
             // Show the clicked tab's content
             var content = document.querySelector('.work-cont[data-content="' + tabId + '"]');
             content.style.display = 'block';

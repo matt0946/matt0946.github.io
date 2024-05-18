@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'League Spartan'; 
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .title {
@@ -74,7 +74,7 @@ body {
     border-radius: 8px;
     height: 40px;
     width: 80px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 40px;
     display: inline-block;
@@ -164,7 +164,9 @@ body {
 }
 
 .work-boxtitle {
-    padding-top:10px
+    padding-top:10px;
+    font-size: 20px;
+    font-style: bold;
 }
 
 .workexperience {
@@ -187,7 +189,7 @@ body {
 }
 
 .workexperience:hover {
-    background-color: rgb(59, 82, 128); /* Replace with your desired color */
+    background-color: rgba(46, 56, 100, 0.363); /* Replace with your desired color */
 }
 
 .work-header {
@@ -211,4 +213,27 @@ body {
 
 .work-description {
     padding-top:10px;
+}
+
+.technology-container {
+    display: flex;
+    padding: 20px;
+    gap:3px;
+}
+
+.technology-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6%;
+    height: 35px;
+    padding:0 7px;
+    line-height: 2;
+    background-color: rgb(33, 38, 49);
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.active-tab {
+    background-color: rgba(46, 56, 100, 0.747); /* Or any other style you want to apply to the active tab */
 }
