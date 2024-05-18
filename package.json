@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/matt0946/matt0946.github.io#readme",
   "dependencies": {
-    "react-typed": "^2.0.12"
+    "react-typed": "^2.0.12",
+    "react-typical": "^0.1.3"
   }
 }
