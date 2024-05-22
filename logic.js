@@ -2,7 +2,7 @@ window.onload = function() {
     var introElement = document.querySelector('.intro-type'); // Selects the first element with the class 'intro'
     if (introElement) {
         var typed = new Typed(introElement, {
-            strings: ["Hello! My name is Matthew :)", "I am a UBC student!", "I am an aspiring developer!"],
+            strings: ["I am an aspiring developer!", "I am a computer science UBC 2024 candidate!", "I like to craft scalable projects with code!"],
             typeSpeed: 150,
             backSpeed: 100,
             loop: true

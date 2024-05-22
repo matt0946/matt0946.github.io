@@ -7,6 +7,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.intro-innerbox:hover {
+    transform: scale(1.01);
 }
 
 html {
@@ -25,12 +30,24 @@ body {
     position: relative;
 }
 
-.intro {
+.name {
     padding-left:20px;
+    font-size: 20px;
 }
 
 .intro-type {
-    padding-left:20px;
+    padding-left: 5px;
+}
+
+.bio {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.bio-hello {
+    padding-left: 10px;
 }
 
 .headshot {
@@ -84,6 +101,12 @@ body {
     position: absolute;
     top: 35px;
     right: 0;
+    transition: transform 0.3s ease;
+}
+
+.resume_button:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
 }
 
 .icon {
@@ -141,8 +164,13 @@ body {
     padding-top:10px;
     padding-left:20px;
     padding-bottom:10px;
-    
+    transition: transform 0.5s ease;
 }
+
+.work-outterbox:hover {
+    transform: scale(1.01);
+}
+
 
 .work-innerbox-left {
     padding-top: 30px;
@@ -157,8 +185,6 @@ body {
     color: white;
     margin-left: auto;
     margin-right: auto;
-    
-
 }
 
 .work-boxtitle {
@@ -174,9 +200,10 @@ body {
     list-style-type: none;
     line-height: 1;
     font-size:15px;
-    transition: background-color 0.3s ease; /* Add this line */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add this line */
     border-radius: 5%;
 }
+
 .work-name-selection {
     padding-top:15px;
     padding-left:7px;
@@ -188,6 +215,8 @@ body {
 
 .workexperience:hover {
     background-color: rgba(46, 56, 100, 0.363); /* Replace with your desired color */
+    transform: translateY(-2px); /* move tab 10px upward */
+    cursor: pointer;
 }
 
 .work-header {
@@ -202,7 +231,8 @@ body {
 
 .work-details-container {
     display: block;
-    padding-left:20px
+    padding-left:20px;
+    
 }
 
 .work-details {
@@ -231,6 +261,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 17px;
 }
+
 
 .active-tab {
     background-color: rgba(46, 56, 100, 0.747); /* Or any other style you want to apply to the active tab */
