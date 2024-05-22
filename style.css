@@ -139,11 +139,6 @@ body {
     font-size: 15px;
     display: none;
   }
-  
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-    /*background-color: #ccc;*/
-}
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
@@ -161,6 +156,7 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     padding:30px;
     padding-top:10px;
     padding-left:20px;
@@ -233,7 +229,6 @@ body {
 .work-details-container {
     display: block;
     padding-left:20px;
-    
 }
 
 .work-details {
@@ -266,4 +261,68 @@ body {
 
 .active-tab {
     background-color: rgba(46, 56, 100, 0.747); /* Or any other style you want to apply to the active tab */
+}
+
+.project-outterbox {
+    padding: 30px;
+    background-color: rgb(43, 50, 64);
+    color: white;
+    border-radius:2%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.project-outterbox {
+    display:block;
+    background-color: rgb(33, 38, 49);
+    color: white;
+    border-radius:2%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+    padding-top:10px;
+    padding-left:20px;
+    padding-bottom:10px;
+    transition: transform 0.5s ease;
+}
+
+.project-outterbox:hover {
+    transform: scale(1.01);
+}
+
+.project-boxtitle {
+    padding-top: 10px;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.project-collapsible {
+    background-color: rgb(43, 50, 64);
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    line-height: 2;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.project-collapsible:hover {
+    transform: scale(1.01);
+}
+
+.project-collapsible i {
+   float: right;
+}
+
+.project-desc-container {
+    max-height:0px;
+    overflow:hidden;
+    transition: max-height 0.5s ease-out;
 }

@@ -33,6 +33,21 @@ function about_collapse(clickedElement) {
     }
 }
 
+function project_collapse(clickedElement) {
+    clickedElement.classList.toggle("active");
+    var content = clickedElement.querySelector('.project-desc-container');
+    var icon = clickedElement.querySelector('i');
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        icon.classList.remove('fa-solid', 'fa-angles-down');
+        icon.classList.add('fa-solid', 'fa-angles-up');
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.classList.remove('fa-solid', 'fa-angles-up');
+        icon.classList.add('fa-solid', 'fa-angles-down');
+    }
+}
+
 function work_showTab(tabName) {
     var tabs = document.querySelectorAll('.workexperience');
     tabs.forEach(function(tab) {
