@@ -48,7 +48,7 @@
             </div>
 
             <div class="about">
-                <a class="collapsible" onclick="about_collapse()"><i class="fa-regular fa-square-plus"></i></a> { 
+                <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-minus" style="color:rgb(53, 200, 226)"></i></a> { 
                 <div class="about-item-count"> 4 items</div>
                 <div class=all-info>
                     <div class="about-row">
@@ -62,9 +62,9 @@
                     </div>
                     
                     <div class="about-row">
-                        <a class="collapsible" onclick="about_collapse()"><i class="fa-regular fa-square-plus"></i></a> {
-                        <div class="about-item-count"> 4 items</div>
-                        <div id="contact-info">
+                        <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-plus"></i></a> "contact" : {
+                        <div class="about-item-count" style="color: rgb(205, 96, 255);"> ... </div>
+                        <div id="contact-info" style="display: none;">
                             <div class="about-row">
                                 "email" : <div class="about-value">"mattlee946@outlook.com"</div>
                             </div>
@@ -81,9 +81,9 @@
                     } </div>
                     
                     <div class="about-row">
-                        <a class="collapsible" onclick="about_collapse()"><i class="fa-regular fa-square-plus"></i></a> {
-                        <div class="about-item-count"> 4 items</div>
-                        <div id="hobbies-info">
+                        <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-plus"></i></a> "hobbies" : [
+                        <div class="about-item-count" style="color: rgb(205, 96, 255);"> ...</div>
+                        <div id="hobbies-info" style="display: none;">
                             <div class="about-row">
                                 <div class="about-collection">0 : </div>
                                 <div class="about-value">volleyball</div>
@@ -101,12 +101,12 @@
                                 <div class="about-value">hiking</div>
                             </div>
                         </div>
-                    } </div>
+                    ] </div>
 
                     <div class="about-row">
-                        <a class="collapsible" onclick="about_collapse()"><i class="fa-regular fa-square-plus"></i></a> {
-                        <div class="about-item-count"> 4 items</div>
-                        <div id="contact-info">
+                        <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-plus"></i></a> "video games" : {
+                        <div class="about-item-count" style="color: rgb(205, 96, 255);"> ... </div>
+                        <div id="contact-info" style="display: none;">
                             <div class="about-row">
                                 "Apex Legends" : <div class="about-value">"Bronze 4"</div>
                             </div>
@@ -136,7 +136,7 @@
         <div class="work-innerbox-left">
             <div class="work-boxtitle"> Places I have worked!</div>
             
-            <div class="workexperience" data-tab="1" type="button" onclick="work_showTab('SAP')">
+            <div class="workexperience active-tab" data-tab="1" type="button" onclick="work_showTab('SAP')">
                 <img class="work-logo-selection" src="images/SAP_logo.png" alt="SAP">
                 <div class="work-name-selection">SAP</div>
             </div>
@@ -291,7 +291,11 @@
             </div>
         </div>
     </div>
-    
 </section id=work-experiences>
+
+<!-- Community Projects Section -->
+<section id="Community projects">
+
+</section>
     
 </html>

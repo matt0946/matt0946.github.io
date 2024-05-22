@@ -10,25 +10,26 @@ window.onload = function() {
     }
 }
 
+function about_collapse(clickedElement) {
+    clickedElement.classList.toggle("active");
+    var icon = clickedElement.querySelector('i');
 
-
-function about_collapse() {
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-        
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var itemCount = this.nextElementSibling;
-            var content = itemCount.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                itemCount.textContent = "...";
-            } else {
-                content.style.display = "block";
-                itemCount.textContent = "4 items";
-            }
-        });
+    var itemCount = clickedElement.nextElementSibling;
+    var content = itemCount.nextElementSibling;
+    if (content.style.display === "block" || content.style.display === "") {
+        content.style.display = "none";
+        itemCount.style.color = "rgb(205, 96, 255)";
+        itemCount.textContent = "...";
+        icon.classList.remove('fa-regular','fa-square-minus');
+        icon.classList.add('fa-regular', 'fa-square-plus');
+        icon.style.color = "rgb(219, 206, 25)";
+    } else {
+        content.style.display = "block";
+        itemCount.textContent = "4 items"
+        itemCount.style.color = "rgba(171, 172, 171, 0.438)";
+        icon.classList.remove('fa-regular', 'fa-square-plus');
+        icon.classList.add('fa-regular', 'fa-square-minus');
+        icon.style.color = "rgb(53, 200, 226)";
     }
 }
 
