@@ -2,8 +2,13 @@ window.onload = function() {
     var introElement = document.querySelector('.intro-type'); // Selects the first element with the class 'intro'
     if (introElement) {
         var typed = new Typed(introElement, {
-            strings: ["I am an aspiring developer!", "I am a computer science UBC 2024 candidate!", "I like to craft scalable projects with code!"],
-            typeSpeed: 150,
+            strings: ["Welcome!", 
+            "Welcome!", 
+            "Welcome to my website!",
+            "I am a bachelors of computer science UBC 2024 candidate!", 
+            "I am a an aspiring software developer!",
+            "I like to craft scalable projects with code!"],
+            typeSpeed: 50,
             backSpeed: 100,
             loop: true
         });
@@ -41,10 +46,12 @@ function project_collapse(clickedElement) {
         content.style.maxHeight = null;
         icon.classList.remove('fa-solid', 'fa-angles-down');
         icon.classList.add('fa-solid', 'fa-angles-up');
+        clickedElement.style.borderRadius = null;
     } else {
         content.style.maxHeight = content.scrollHeight + "px";
         icon.classList.remove('fa-solid', 'fa-angles-up');
         icon.classList.add('fa-solid', 'fa-angles-down');
+        clickedElement.style.borderRadius = "5px";
     }
 }
 
