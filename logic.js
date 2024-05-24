@@ -82,4 +82,30 @@ function work_showTab() {
     });
 }
 
+var navItems = document.querySelectorAll('.navbar-item a');
 
+navItems.forEach(function(navItem) {
+    navItem.addEventListener('click', function() {
+        navItems.forEach(function(item) {
+            item.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
+});
+
+window.addEventListener('scroll', function() {
+    var sections = document.querySelectorAll('section');
+    sections.forEach(function(section) {
+        var rect = section.getBoundingClientRect();
+        var isInView = (rect.top >= 0) && (rect.bottom <= window.innerHeight);
+        if (isInView) {
+            var id = section.id;
+            navItems.forEach(function(navItem) {
+                navItem.classList.remove('active');
+                if (navItem.getAttribute('href') === '#' + id) {
+                    navItem.classList.add('active');
+                }
+            });
+        }
+    });
+});
