@@ -1,12 +1,13 @@
 window.onload = function() {
+    work_showTab(1);
     var introElement = document.querySelector('.intro-type'); // Selects the first element with the class 'intro'
     if (introElement) {
         var typed = new Typed(introElement, {
             strings: ["Welcome!", 
             "Welcome!", 
             "Welcome to my website!",
-            "I am a bachelors of computer science UBC 2024 candidate!", 
-            "I am a an aspiring software developer!",
+            "I am a bachelor's of computer science UBC 2024 candidate!", 
+            "I am an aspiring software developer!",
             "I like to craft scalable projects with code!"],
             typeSpeed: 50,
             backSpeed: 100,
@@ -55,7 +56,7 @@ function project_collapse(clickedElement) {
     }
 }
 
-function work_showTab(tabName) {
+function work_showTab() {
     var tabs = document.querySelectorAll('.workexperience');
     tabs.forEach(function(tab) {
         tab.addEventListener('click', function() {

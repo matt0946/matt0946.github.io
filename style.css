@@ -89,6 +89,7 @@
 html {
     background-color: rgb(27, 32, 41);
     scroll-behavior: smooth;
+    /* background-image: url("images/Clouds.gif"); */
 }
 
 body {
@@ -127,6 +128,7 @@ body {
     border-radius: 50%;
     height: 100;
     border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about {
