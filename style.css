@@ -411,6 +411,7 @@ body {
     transition: transform 0.3s ease;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    font-size:20px;
 }
 
 .project-collapsible:hover {
@@ -418,11 +419,55 @@ body {
 }
 
 .project-collapsible i {
-   float: right;
+   margin-left: auto;
 }
 
 .project-desc-container {
     max-height:0px;
     overflow:hidden;
     transition: max-height 0.5s ease-out;
+}
+
+.project-img {
+    height: 40px;
+    padding-left: 10px;
+}
+
+.project-title {
+    display:flex;
+    align-items:center;
+    padding-left: 10px;
+}
+
+.project-description {
+    margin-left: 20px;
+    font-size:17px;
+    line-height: 1;
+}
+
+.project-description p {
+    margin-left: 20px;
+}
+
+.git-project {
+    margin-left:auto;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.git-project a {   
+    text-decoration: none; 
+    color: inherit; 
+    font-size: 30px;
+}
+
+.git-project:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    color:rgba(171, 172, 171, 0.438);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

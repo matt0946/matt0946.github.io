@@ -10,73 +10,72 @@
 </head>
 <script src="https://kit.fontawesome.com/285caac54f.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-<div id="main">
-    <!-- Navigation Bar Section -->
-    <section id="navbar">
-        <div class="navbar-container">
-            <div class="navbar-item">
-                <a href="#intro">About</a>
-            </div>
-            <div class="navbar-item">
-                <a href="#work">Experience</a>
-            </div>
-            <div class="navbar-item">
-                <a href="#Projects">Projects</a>
-            </div>
-            <div class="resume-button-container">
-                <a href="./files/Resume.pdf" target="_blank">
-                    <button class="resume_button">Resume</button>
-                </a>
-            </div>
+<!-- Navigation Bar Section -->
+<section id="navbar">
+    <div class="navbar-container">
+        <div class="navbar-item">
+            <a href="#intro">About</a>
         </div>
-    </section>
-
-    <!-- Contact Sidebar Section -->
-    <section id="sidebar">
-        <div class="sidebar-container">
-            <div class="sidebar-item">
-                <a href="https://github.com/matt0946" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>  
-            <div class="sidebar-item">   
-                <a href="https://www.linkedin.com/in/matthew-lee-328129160" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>  
-            <div class="sidebar-item">  
-                <a href="https://www.instagram.com/matthew.leeee/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-            <div class="sidebar-item">
-                <a href="mailto:mattlee946@outlook.com" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
+        <div class="navbar-item">
+            <a href="#work">Experience</a>
         </div>
-    </section>
+        <div class="navbar-item">
+            <a href="#Projects">Projects</a>
+        </div>
+        <div class="resume-button-container">
+            <a href="./files/Resume.pdf" target="_blank">
+                <button class="resume_button">Resume</button>
+            </a>
+        </div>
+    </div>
+</section>
 
-    <!--Intro Section-->
-    <section id="intro" >
-        <div class="intro-outterbox">
-            <div class="intro-innerbox">
-                <div class="title">
-                    <img class="headshot" src="images/Headshot.jpg" alt="Matthew">
-                    <header class="name"> Hello! My name is Matthew Lee :) </header>
-                    <!--
+<!-- Contact Sidebar Section -->
+<section id="sidebar">
+    <div class="sidebar-container">
+        <div class="sidebar-item">
+            <a href="https://github.com/matt0946" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="https://www.linkedin.com/in/matthew-lee-328129160" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="https://www.instagram.com/matthew.leeee/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="mailto:mattlee946@outlook.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--Intro Section-->
+<section id="intro">
+    <div class="intro-outterbox">
+        <div class="intro-innerbox">
+            <div class="title">
+                <img class="headshot" src="images/Headshot.jpg" alt="Matthew">
+                <header class="name"> Hello! My name is Matthew Lee :) </header>
+                <!--
                     <div class="resume-button-container">
                         <a href="./files/Resume.pdf" target="_blank">
                             <button class="resume_button">Resume</button>
                         </a>
                     </div>
                     -->
-                </div>
-                <div class="bio">
-                    <p class="bio-hello"> &nbsp </p>
-                    <p class="intro-type"> &nbsp </p>
-                </div>
-                <!--
+            </div>
+            <div class="bio">
+                <p class="bio-hello"> &nbsp </p>
+                <p class="intro-type"> &nbsp </p>
+            </div>
+            <!--
                 <div class="icon">
 
                     <a href="https://github.com/matt0946" target="_blank">
@@ -97,308 +96,412 @@
                 </div>
                 -->
 
-                <div class="about">
-                    <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-minus" style="color:rgb(53, 200, 226)"></i></a> { 
-                    <div class="about-item-count"> 4 items</div>
-                    <div class=all-info>
-                        <div class="about-row">
-                            "name" : <div class="about-value">"Matthew Lee"</div>
-                        </div>
-                        <div class="about-row">
-                            "about" : <div class="about-value">"Computer Science Student @ UBC"</div>
-                        </div>
-                        <div class="about-row">
-                            "location" : <div class="about-value">"Vancouver BC, Canada"</div>
-                        </div>
-                        
-                        <div class="about-row">
-                            <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-plus"></i></a> "contact" : {
-                            <div class="about-item-count" style="color: rgb(205, 96, 255);"> ... </div>
-                            <div id="contact-info" style="display: none;">
-                                <div class="about-row">
-                                    "email" : <div class="about-value">"mattlee946@outlook.com"</div>
-                                </div>
-                                <div class="about-row">
-                                    "github" : <div class="about-value">"https://github.com/matt0946"</div>
-                                </div>
-                                <div class="about-row">
-                                    "linkedin" : <div class="about-value">"https://www.linkedin.com/in/matthew-lee-0b1b3b1b1/"</div>
-                                </div>
-                                <div class="about-row">
-                                    "instagram" : <div class="about-value">"https://www.instagram.com/matthew.leeee/"</div>
-                                </div>
-                            </div>
-                        } </div>
-                        
-                        <div class="about-row">
-                            <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-plus"></i></a> "hobbies" : [
-                            <div class="about-item-count" style="color: rgb(205, 96, 255);"> ...</div>
-                            <div id="hobbies-info" style="display: none;">
-                                <div class="about-row">
-                                    <div class="about-collection">0 : </div>
-                                    <div class="about-value">volleyball</div>
-                                </div>
-                                <div class="about-row">
-                                    <div class="about-collection">1 : </div>
-                                    <div class="about-value">tennis</div>
-                                </div>
-                                <div class="about-row">
-                                    <div class="about-collection">2 : </div>
-                                    <div class="about-value">golf</div>
-                                </div>
-                                <div class="about-row">
-                                    <div class="about-collection">3 : </div>
-                                    <div class="about-value">hiking</div>
-                                </div>
-                            </div>
-                        ] </div>
-
-                        <div class="about-row">
-                            <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-plus"></i></a> "video games" : {
-                            <div class="about-item-count" style="color: rgb(205, 96, 255);"> ... </div>
-                            <div id="contact-info" style="display: none;">
-                                <div class="about-row">
-                                    "Apex Legends" : <div class="about-value">"Bronze 4"</div>
-                                </div>
-                                <div class="about-row">
-                                    "CSGO2" : <div class="about-value">"Silver Elite"</div>
-                                </div>
-                                <div class="about-row">
-                                    "Valorant" : <div class="about-value">"Bronze 1"</div>
-                                </div>   
-                                <div class="about-row">
-                                    "Call of Duty" : <div class="about-value">"2.15 K/D"</div>
-                                </div>               
-                            </div>
-                        } </div>
-                            
-                        </div>
-                    } </div>
+            <div class="about">
+                <a class="collapsible" onclick="about_collapse(this)"><i class="fa-regular fa-square-minus"
+                        style="color:rgb(53, 200, 226)"></i></a> {
+                <div class="about-item-count"> 4 items</div>
+                <div class=all-info>
+                    <div class="about-row">
+                        "name" : <div class="about-value">"Matthew Lee"</div>
                     </div>
+                    <div class="about-row">
+                        "about" : <div class="about-value">"Computer Science Student @ UBC"</div>
+                    </div>
+                    <div class="about-row">
+                        "location" : <div class="about-value">"Vancouver BC, Canada"</div>
+                    </div>
+
+                    <div class="about-row">
+                        <a class="collapsible" onclick="about_collapse(this)"><i
+                                class="fa-regular fa-square-plus"></i></a> "contact" : {
+                        <div class="about-item-count" style="color: rgb(205, 96, 255);"> ... </div>
+                        <div id="contact-info" style="display: none;">
+                            <div class="about-row">
+                                "email" : <div class="about-value">"mattlee946@outlook.com"</div>
+                            </div>
+                            <div class="about-row">
+                                "github" : <div class="about-value">"https://github.com/matt0946"</div>
+                            </div>
+                            <div class="about-row">
+                                "linkedin" : <div class="about-value">
+                                    "https://www.linkedin.com/in/matthew-lee-0b1b3b1b1/"</div>
+                            </div>
+                            <div class="about-row">
+                                "instagram" : <div class="about-value">"https://www.instagram.com/matthew.leeee/"</div>
+                            </div>
+                        </div>
+                        }
+                    </div>
+
+                    <div class="about-row">
+                        <a class="collapsible" onclick="about_collapse(this)"><i
+                                class="fa-regular fa-square-plus"></i></a> "hobbies" : [
+                        <div class="about-item-count" style="color: rgb(205, 96, 255);"> ...</div>
+                        <div id="hobbies-info" style="display: none;">
+                            <div class="about-row">
+                                <div class="about-collection">0 : </div>
+                                <div class="about-value">volleyball</div>
+                            </div>
+                            <div class="about-row">
+                                <div class="about-collection">1 : </div>
+                                <div class="about-value">tennis</div>
+                            </div>
+                            <div class="about-row">
+                                <div class="about-collection">2 : </div>
+                                <div class="about-value">golf</div>
+                            </div>
+                            <div class="about-row">
+                                <div class="about-collection">3 : </div>
+                                <div class="about-value">hiking</div>
+                            </div>
+                        </div>
+                        ]
+                    </div>
+
+                    <div class="about-row">
+                        <a class="collapsible" onclick="about_collapse(this)"><i
+                                class="fa-regular fa-square-plus"></i></a> "video games" : {
+                        <div class="about-item-count" style="color: rgb(205, 96, 255);"> ... </div>
+                        <div id="contact-info" style="display: none;">
+                            <div class="about-row">
+                                "Apex Legends" : <div class="about-value">"Bronze 4"</div>
+                            </div>
+                            <div class="about-row">
+                                "CSGO2" : <div class="about-value">"Silver Elite"</div>
+                            </div>
+                            <div class="about-row">
+                                "Valorant" : <div class="about-value">"Bronze 1"</div>
+                            </div>
+                            <div class="about-row">
+                                "Call of Duty" : <div class="about-value">"2.15 K/D"</div>
+                            </div>
+                        </div>
+                        }
+                    </div>
+
+                </div>
+                }
             </div>
         </div>
-        <script src="logic.js"></script>
-    </section>
+    </div>
+    </div>
+    <script src="logic.js"></script>
+</section>
 
-    <!-- Work Experience Section -->
-    <section id="work">
-        <div class="work-outterbox">
-            <div class="work-innerbox-left">
-                <div class="work-boxtitle"> Places I have worked!</div>
-                
-                <div class="workexperience active-tab" data-tab="1" type="button" onclick="work_showTab()">
-                    <img class="work-logo-selection" src="images/SAP_logo.png" alt="SAP">
-                    <div class="work-name-selection">SAP</div>
-                </div>
+<!-- Work Experience Section -->
+<section id="work">
+    <div class="work-outterbox">
+        <div class="work-innerbox-left">
+            <div class="work-boxtitle"> Places I have worked!</div>
 
-                <div class="workexperience" data-tab="2" type="button" onclick="work_showTab()">
-                    <img class="work-logo-selection" src="images/ICBC_logo.png" alt="ICBC">
-                    <div class="work-name-selection">ICBC</div>
-                </div>
+            <div class="workexperience active-tab" data-tab="1" type="button" onclick="work_showTab()">
+                <img class="work-logo-selection" src="images/SAP_logo.png" alt="SAP">
+                <div class="work-name-selection">SAP</div>
+            </div>
 
-                <div class="workexperience" data-tab="3" type="button" onclick="work_showTab()">
-                    <img class="work-logo-selection" src="images/picotera_logo.png" alt="TopicoTera">
-                    <div class="work-name-selection">picoTera Electronics Inc.</div>
-                </div>
-            </div>    
+            <div class="workexperience" data-tab="2" type="button" onclick="work_showTab()">
+                <img class="work-logo-selection" src="images/ICBC_logo.png" alt="ICBC">
+                <div class="work-name-selection">ICBC</div>
+            </div>
 
-            <div class="work-innerbox-right">
-                <div class="work-cont" data-content="1">
-                    <div class="work-header">
-                        <img class="work-logo" src="images/SAP_logo.png" alt="SAP">
-                        <div class="work-details-container"> 
-                            <div class="work-title">
-                            Product Support Engineer Intern  
-                            </div>
-                            <div class="work-details">SAP</div>
-                            <div class="work-details">Sep 2022 - Aug 2023</div>
-                        </div>                
-                    </div>
-                    <div class="work-description">
-                        Context
-                        <ul>
-                            <li> Provided real time support for customers utilizing the SAP NetWeaver
-                                application, a software stack that allows businesses to integrate 
-                                their data, business processes, and more into a unified SAP environment.
-                            </li>  
-                        </ul>
+            <div class="workexperience" data-tab="3" type="button" onclick="work_showTab()">
+                <img class="work-logo-selection" src="images/picotera_logo.png" alt="TopicoTera">
+                <div class="work-name-selection">picoTera Electronics Inc.</div>
+            </div>
+        </div>
 
-                        Technical
-                        <ul>
-                            <li> Facilitated real-time support and problem resolution of SAP NetWeaver
-                                product encountering issues with their change and transport management system 
-                                of development changes from each system in their landscape.  </li>
-                            <li> Efficient problem-solving through collaboration with colleagues
-                                and customers observing difficult situations through replication. </li>
-                        </ul>
-
-                        Impact
-                        <ul>
-                            <li> Solved and closed 220+ cases while maintaining over 80% satisfaction
-                                score accross all incoming incidents. </li>
-                            
-                        </ul>
-
-                        Technologies
-                        <div class="technology-container">
-                            <div class="technology-box">SAP NetWeaver</div>  
-                            <div class="technology-box">SQL</div>
-                            <div class="technology-box">ServiceNow</div>
+        <div class="work-innerbox-right">
+            <div class="work-cont" data-content="1">
+                <div class="work-header">
+                    <img class="work-logo" src="images/SAP_logo.png" alt="SAP">
+                    <div class="work-details-container">
+                        <div class="work-title">
+                            Product Support Engineer Intern
                         </div>
-                        
+                        <div class="work-details">SAP</div>
+                        <div class="work-details">Sep 2022 - Aug 2023</div>
+                    </div>
+                </div>
+                <div class="work-description">
+                    Context
+                    <ul>
+                        <li> Provided real time support for customers utilizing the SAP NetWeaver
+                            application, a software stack that allows businesses to integrate
+                            their data, business processes, and more into a unified SAP environment.
+                        </li>
+                    </ul>
+
+                    Technical
+                    <ul>
+                        <li> Facilitated real-time support and problem resolution of SAP NetWeaver
+                            product encountering issues with their change and transport management system
+                            of development changes from each system in their landscape. </li>
+                        <li> Efficient problem-solving through collaboration with colleagues
+                            and customers observing difficult situations through replication. </li>
+                    </ul>
+
+                    Impact
+                    <ul>
+                        <li> Solved and closed 220+ cases while maintaining over 80% satisfaction
+                            score accross all incoming incidents. </li>
+
+                    </ul>
+
+                    Technologies
+                    <div class="technology-container">
+                        <div class="technology-box">SAP NetWeaver</div>
+                        <div class="technology-box">SQL</div>
+                        <div class="technology-box">ServiceNow</div>
+                    </div>
+
                 </div>
             </div>
 
             <div class="work-cont" data-content="2" style="display:none;">
-                    <div class="work-header">
-                        <img class="work-logo" src="images/ICBC_logo.png" alt="SAP">
-                        <div class="work-details-container"> 
-                            <div class="work-title">
-                            Application Developer Intern  
-                            </div>
-                            <div class="work-details">ICBC</div>
-                            <div class="work-details">Sep 2021 - Dec 2021</div>
-                        </div>                
-                    </div>
-                    <div class="work-description">
-                        Context
-                        <ul>
-                            <li> Maintained the Autonomous Emergency Breaking (AEB) database application 
-                                at ICBC to ensure the accuracy of data for insurance purposes.
-                            </li>
-                        </ul>
-
-                        Technical
-                        <ul>
-                            <li> Performing data verification of uploaded AEB data following an end-to-end 
-                                process from developement to production environment using SQL queries.</li>
-                            <li> Performing data extractions from customer requirements using SQL queries. </li>
-                            <li> Collaborativey working in an agile scrum team to analyze project 
-                                requirements and implement appropriate solutions. </li>
-                        </ul>
-
-                        Technologies
-                        <div class="technology-container">
-                            <div class="technology-box"> C# </div>
-                            <div class="technology-box"> SQL </div>
-                            <div class="technology-box"> OutSystems </div>
+                <div class="work-header">
+                    <img class="work-logo" src="images/ICBC_logo.png" alt="SAP">
+                    <div class="work-details-container">
+                        <div class="work-title">
+                            Application Developer Intern
                         </div>
+                        <div class="work-details">ICBC</div>
+                        <div class="work-details">Sep 2021 - Dec 2021</div>
+                    </div>
+                </div>
+                <div class="work-description">
+                    Context
+                    <ul>
+                        <li> Maintained the Autonomous Emergency Breaking (AEB) database application
+                            at ICBC to ensure the accuracy of data for insurance purposes.
+                        </li>
+                    </ul>
+
+                    Technical
+                    <ul>
+                        <li> Performing data verification of uploaded AEB data following an end-to-end
+                            process from developement to production environment using SQL queries.</li>
+                        <li> Performing data extractions from customer requirements using SQL queries. </li>
+                        <li> Collaborativey working in an agile scrum team to analyze project
+                            requirements and implement appropriate solutions. </li>
+                    </ul>
+
+                    Technologies
+                    <div class="technology-container">
+                        <div class="technology-box"> C# </div>
+                        <div class="technology-box"> SQL </div>
+                        <div class="technology-box"> OutSystems </div>
+                    </div>
                 </div>
             </div>
 
             <div class="work-cont" data-content="3" style="display:none;">
-                    <div class="work-header">
-                        <img class="work-logo" src="images/picotera_logo.png" alt="SAP">
-                        <div class="work-details-container"> 
-                            <div class="work-title">
-                            Firmware Programmer Intern 
-                            </div>
-                            <div class="work-details">picoTera Electronics Inc.</div>
-                            <div class="work-details">Sep 2020 - Jan 2021</div>
-                        </div>                
+                <div class="work-header">
+                    <img class="work-logo" src="images/picotera_logo.png" alt="SAP">
+                    <div class="work-details-container">
+                        <div class="work-title">
+                            Firmware Programmer Intern
+                        </div>
+                        <div class="work-details">picoTera Electronics Inc.</div>
+                        <div class="work-details">Sep 2020 - Jan 2021</div>
                     </div>
-                    <div class="work-description">
-                        Context
-                        <ul>
-                            <li> Responsible for development works on picoTera's upcoming smart hearing 
-                                protection device releases. </li>
-                        
-                        </ul>
+                </div>
+                <div class="work-description">
+                    Context
+                    <ul>
+                        <li> Responsible for development works on picoTera's upcoming smart hearing
+                            protection device releases. </li>
 
-                        Technical
-                        <ul>
-                            <li> Developed and added new product functionality firmware code using C </li>
-                            <li> Designed and implemented android application features using Java and 
-                                Android Studios. </li>
-                            <li> Validated vehicle backup alert detection algorithm using mathematical 
-                                models using MATLAB.
-                            </li>
-                            <li> Performed manual field tests to newly implemented features for quality 
-                                assurance.</li>
-                        </ul>
+                    </ul>
 
-                        Impact
-                        <ul>
-                            <li> Designed, implemented, and tested a social distance alert 
-                                feature on the smart hearing protection device prototype 
-                                using bluetooth signals.</li>
-                            <li> Improved accuracy of vehicle backup alert detection algorithm 
-                                and implemented a new algorithm that allows users to a specific
-                                vehicle-equipped backup speaker.</li>
-                            <li> Programically redued the device power consumption, resulting in 
-                                50% more battery life. </li>
-                        </ul>
+                    Technical
+                    <ul>
+                        <li> Developed and added new product functionality firmware code using C </li>
+                        <li> Designed and implemented android application features using Java and
+                            Android Studios. </li>
+                        <li> Validated vehicle backup alert detection algorithm using mathematical
+                            models using MATLAB.
+                        </li>
+                        <li> Performed manual field tests to newly implemented features for quality
+                            assurance.</li>
+                    </ul>
 
-                        Technologies
-                        <div class="technology-container">
-                            <div class="technology-box">C</div>
-                            <div class="technology-box">Java</div>
-                            <div class="technology-box">PSoC</div>
-                            <div class="technology-box">MATLAB</div>
-                            <div class="technology-box">HTML</div>
-                            <div class="technology-box">CSS</div>
-                        </div>    
+                    Impact
+                    <ul>
+                        <li> Designed, implemented, and tested a social distance alert
+                            feature on the smart hearing protection device prototype
+                            using bluetooth signals.</li>
+                        <li> Improved accuracy of vehicle backup alert detection algorithm
+                            and implemented a new algorithm that allows users to a specific
+                            vehicle-equipped backup speaker.</li>
+                        <li> Programically redued the device power consumption, resulting in
+                            50% more battery life. </li>
+                    </ul>
+
+                    Technologies
+                    <div class="technology-container">
+                        <div class="technology-box">C</div>
+                        <div class="technology-box">Java</div>
+                        <div class="technology-box">PSoC</div>
+                        <div class="technology-box">MATLAB</div>
+                        <div class="technology-box">HTML</div>
+                        <div class="technology-box">CSS</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
-    <!-- Projects Section -->
-    <section id="Projects">
-        <div class="project-outterbox">
-            <div class="project-boxtitle"> My Projects! </div>
-            <div class="project-collapsible" onclick="project_collapse(this)"> Travel App 
+<!-- Projects Section -->
+<section id="Projects">
+    <div class="project-outterbox">
+        <div class="project-boxtitle"> My Projects! </div>
+        <div class="project-collapsible" onclick="project_collapse(this)"> 
+            
+            <div class="project-title"> Travel App
+                <img class="project-img" src="images/travel.png"></img>
                 <i class="fa-solid fa-angles-up"></i>
-                <div class="project-desc-container">
-                    <div class="project-description">
-                        <p> TODO: description </p> 
-                    </div>
-                    <div class="technology-container">
-                        <div class="technology-box"> Java </div>
-                        <div class="technology-box"> JavaFX </div>
-                        <div class="technology-box"> SceneBuilder </div>
-                    </div>
-                </div>
             </div>
-            <div class="project-collapsible" onclick="project_collapse(this)"> NBA Stats
-                <i class="fa-solid fa-angles-up"></i>
-                <div class="project-desc-container">
-                    <div class="project-description">
-                        <p> TODO: description </p> 
-                    </div>
-                    <div class="technology-container">
-                        <div class="technology-box"> MySQL </div>
-                        <div class="technology-box"> PHP </div>
-                        <div class="technology-box"> HTML </div>
-                    </div>
+            <div class="project-desc-container">
+                <div class="project-description">
+                    About
+                    <p> An interactive desktop application allowing users to maintain a 
+                        travel agenda. </p>
+                    Features
+                    <ul>
+                        <li> Categorize travel agenda activities into 3 categories; (1) Things to do, 
+                            (2) Sight seeing places, (3) Places to eat. </li>
+                        <li> Retrieves currency exchange information from an online API parsing it
+                             into a JSON object for currency exchange functionality. </li>
+                        <li> Saving and loading functionality by writing and reading previous progress
+                            from a text file.
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="project-collapsible" onclick="project_collapse(this)"> Space Invasion
-                <i class="fa-solid fa-angles-up"></i>
-                <div class="project-desc-container"> 
-                    <div class="project-description">
-                        <p> TODO: description </p>
-                    </div>
-                    <div class="technology-container">
-                        <div class="technology-box"> Swift </div>
-                        <div class="technology-box"> Xcode </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-collapsible" onclick="project_collapse(this)"> Mixed Feelings
-                <i class="fa-solid fa-angles-up"></i>
-                <div class="project-desc-container">
-                    <div class="project-description">
-                        <p> TODO: description </p>  
-                    </div>
-                    <div class="technology-container">
-                        <div class="technology-box"> C# </div>
-                        <div class="technology-box"> Unity </div>
-                    </div>  
-                </div>
-            </div>
+                <div class="technology-container">
+                    <div class="technology-box"> Java </div>
+                    <div class="technology-box"> JavaFX </div>
+                    <div class="technology-box"> SceneBuilder </div>
 
+                    <div class="git-project"> 
+                        <a href="https://github.com/matt0946/TravellingApp" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-</div>
+        <div class="project-collapsible" onclick="project_collapse(this)"> 
+            <div class="project-title">NBA Stats
+                <img class="project-img" src="images/basketball.png"></img>
+                <i class="fa-solid fa-angles-up"></i>
+            </div>
+            <div class="project-desc-container">
+                <div class="project-description">
+                    About
+                    <p> An interative web application that allows users to query and view information
+                         about the NBA sports league. </p>
+                    Features
+                    <ul>
+                        <li> Created and populated a database utilizing SQL scripts. </li>
+                        <li> Design a webpage user interface allowing users to filter and 
+                            view information about the NBA sports league. </li>
+                        <li> Parsed user input from frontend filters into valid SQL queries
+                            to extract database output.</li>
+                    </ul>
+                </div>
+                <div class="technology-container">
+                    <div class="technology-box"> MySQL </div>
+                    <div class="technology-box"> PHP </div>
+                    <div class="technology-box"> HTML </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-collapsible" onclick="project_collapse(this)"> 
+            <div class="project-title">Space Invasion
+                <img class="project-img" src="images/alien.png"></img>
+                <i class="fa-solid fa-angles-up"></i>
+            </div>
+            <div class="project-desc-container">
+                <div class="project-description">
+                    About
+                    <p> An interactive iOS space game allowing users to move and shoot incoming
+                         alien ships. </p>
+
+                    Features
+                    <ul>
+                        <li> Incorporated a scoring system that keeps track of the current
+                            session score and the highest score achieved.
+                        </li>
+                        <li> Incorporated sound effects utilizing .wav files. </li>
+                        <li> Player movement controlled by user touch location on IOS device.</li>
+                    </ul>
+                </div>
+                <div class="technology-container">
+                    <div class="technology-box"> Swift </div>
+                    <div class="technology-box"> Xcode </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-collapsible" onclick="project_collapse(this)"> 
+            <div class="project-title"> Mixed Feelings
+                <img class="project-img" src="images/gameJam.png"></img> 
+                <i class="fa-solid fa-angles-up"></i>
+            </div>
+            <div class="project-desc-container">
+                <div class="project-description">
+                    About
+                    <p> As part of the 2020 Vancouver Global Game Jam, we developed a 
+                        3D interactive obstacle course game in a team of 5 programmers 
+                        within 72 hours. The game reveals story of a girl running through
+                        all the emotions after a heartbreak in the pursuit of acceptance.</p>
+
+                    Features
+                    <ul>
+                        <li> Implemented scripts for game model movement in C#. </li>
+                        <li> Implemented collision detection triggers in C# utizing 3D model 
+                            hitboxes in Unity. </li>
+                        <li> Designed custom graphic art for transition and loading screen.</li>
+                    </ul>
+                </div>
+                <div class="technology-container">
+                    <div class="technology-box"> C# </div>
+                    <div class="technology-box"> Unity </div>
+
+                    <div class="git-project"> 
+                        <a href="https://github.com/matt0946/BC-Game-Jam-2020" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-collapsible" onclick="project_collapse(this)"> 
+            <div class="project-title"> Personal website
+                <img class="project-img" src="images/website.png"></img> 
+                <i class="fa-solid fa-angles-up"></i>
+            </div>
+            <div class="project-desc-container">
+                <div class="project-description">
+                    <p> You're already here! :) </p>
+                </div>
+                <div class="technology-container">
+                    <div class="technology-box"> JavaScript </div>
+                    <div class="technology-box"> HTML </div>
+                    <div class="technology-box"> CSS </div>
+                    <div class="technology-box"> React </div>
+
+                    <div class="git-project"> 
+                        <a href="https://github.com/matt0946/matt0946.github.io" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="footer"> Made by Matthew Lee </div>
+</section>
 </html>
