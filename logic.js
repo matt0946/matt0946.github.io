@@ -24,11 +24,13 @@ function about_collapse(clickedElement, expandElement) {
     var content = itemCount.nextElementSibling;
     if (content.style.display === "block" || content.style.display === "") {
         content.style.display = "none";
-        itemCount.style.color = "rgb(205, 96, 255)";
+        //itemCount.style.color = "rgb(205, 96, 255)";
+        itemCount.style.color = "rgb(253, 143, 0)";
         itemCount.textContent = "...";
         icon.classList.remove('fa-regular','fa-square-minus');
         icon.classList.add('fa-regular', 'fa-square-plus');
         icon.style.color = "rgb(219, 206, 25)";
+        icon.style.color = "rgb(32, 172, 67)"
     } else {
         content.style.display = "block";
         if (expandElement == 1) {

@@ -73,6 +73,26 @@
     border-bottom: 2px solid red;
 }
 
+.navbar-item-left {
+    display: flex;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.navbar-item-left i{
+    line-height:50px;
+    color:white;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+
+.navbar-name {
+    line-height:50px;
+    color:white;
+    font-size: 25px;
+}
+
 .intro-innerbox {
     padding: 30px;
     background-color: rgb(43, 50, 64);
@@ -95,6 +115,7 @@ html {
     background-color: rgb(27, 32, 41);
     scroll-behavior: smooth;
     /* background-image: url("images/Clouds.gif"); */
+    /*background-image: url("images/topology.jpg");*/
 }
 
 body {
@@ -114,6 +135,10 @@ body {
     font-size: 20px;
 }
 
+.coffee {
+    height: 50px;
+}
+
 .intro-type {
     padding-left: 5px;
 }
@@ -131,10 +156,14 @@ body {
 
 .headshot {
     border-radius: 50%;
-    height: 100;
-    border: 2px solid rgb(255, 255, 255);
+    height: 150;
+    outline: 2px solid rgba(255, 255, 255, 0.349);
+    /*border: 2px solid rgb(255, 255, 255);*/
+    border: 3px solid rgb(43, 50, 64);
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* DRACULA LIKE THEME
 
 .about {
     padding: 10px;
@@ -163,26 +192,39 @@ body {
 .about-item-count {
     color:rgba(171, 172, 171, 0.438);
     display: inline-block;
+}
+*/
 
+/* INTELLIJ LIKE THEME*/
+
+.about {
+    padding: 10px;
+    background-color: rgba(40, 37, 37, 0.979);
+    font-family: monospace;
+    list-style-type: none;
+    line-height: 1;
+    font-size:15px;
 }
 
-/* .resume_button {
-    background-color: rgb(66, 140, 170);
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-    height: 40px;
-    width: 80px;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 40px;
+.about-value {
+    color:rgb(253, 143, 0);
     display: inline-block;
-    margin-left: auto;
-    border:none;
-    position: absolute;
-    top: 35px;
-    right: 0;
-    transition: transform 0.3s ease;
-} */
+}
+
+.about-row {
+    padding: 3px 5px 3px 35px; 
+    border-left: 1px solid rgb(73, 72, 62);
+}
+
+.about-collection {
+    color:rgb(126, 210, 243);
+    display: inline-block;
+}
+
+.about-item-count {
+    color:rgba(171, 172, 171, 0.438);
+    display: inline-block;
+}
 
 .resume_button {
     background-color: rgb(66, 140, 170);
@@ -220,7 +262,8 @@ body {
     border:none;
     background-color: rgba(40, 37, 37, 0.979);
     text-decoration: none;
-    color:rgb(219, 206, 25);
+    /*color:rgb(219, 206, 25);*/
+    color:rgb(32, 172, 67);
     cursor: pointer;
 }
 
