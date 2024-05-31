@@ -104,7 +104,7 @@ window.addEventListener('scroll', function() {
     sections.forEach(function(section) {
         // highlight current nav section in view
         var rect = section.getBoundingClientRect();
-        var isInView = (rect.top >= 0) && (rect.bottom <= window.innerHeight);
+        var isInView = (rect.top >= 0) && (rect.bottom <= window.innerHeight) && rect.top <= (window.innerHeight - 70);
         if (isInView) {
             var id = section.id;
             navItems.forEach(function(navItem) {
