@@ -13,6 +13,7 @@
     left: 50%; /* Center the line */
     height: 100%; /* Height of the line */
 }
+
 .sidebar-container {
     position: relative;
 }
@@ -30,6 +31,7 @@
     color:rgba(217, 193, 228, 0.699);
     text-decoration: none;
     font-size: 25px;
+    
 }
 
 .navbar-container {
@@ -92,7 +94,7 @@
     font-size: 25px;
 }
 
-.section {
+.section_ {
     transform: translateY(20px);
     opacity: 0;
     transition: 1s ease;
