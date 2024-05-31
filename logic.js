@@ -16,7 +16,7 @@ window.onload = function() {
     }
 }
 
-function about_collapse(clickedElement) {
+function about_collapse(clickedElement, expandElement) {
     clickedElement.classList.toggle("active");
     var icon = clickedElement.querySelector('i');
 
@@ -31,7 +31,11 @@ function about_collapse(clickedElement) {
         icon.style.color = "rgb(219, 206, 25)";
     } else {
         content.style.display = "block";
-        itemCount.textContent = "4 items"
+        if (expandElement == 1) {
+            itemCount.textContent = "6 items";
+        } else {
+            itemCount.textContent = "4 items";
+        }
         itemCount.style.color = "rgba(171, 172, 171, 0.438)";
         icon.classList.remove('fa-regular', 'fa-square-plus');
         icon.classList.add('fa-regular', 'fa-square-minus');
