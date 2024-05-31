@@ -102,6 +102,7 @@ navItems.forEach(function(navItem) {
 window.addEventListener('scroll', function() {
     var sections = document.querySelectorAll('section');
     sections.forEach(function(section) {
+        // highlight current nav section in view
         var rect = section.getBoundingClientRect();
         var isInView = (rect.top >= 0) && (rect.bottom <= window.innerHeight);
         if (isInView) {
@@ -112,6 +113,16 @@ window.addEventListener('scroll', function() {
                     navItem.classList.add('active');
                 }
             });
+
+        }
+
+        // fade section in and out
+        isInView = rect.bottom > 0 && rect.top < (window.innerHeight - 70 || document.documentElement.clientHeight - 150);
+        if (isInView && section.id !== 'navbar' 
+            && section.id !== 'sidebar' && section.id !== 'footer') {
+            section.classList.add('section-visible');
+        } else {
+            section.classList.remove('section-visible');
         }
     });
 });
