@@ -1,5 +1,11 @@
 window.onload = function() {
+    // loading screen displayed for 1 second
+    setTimeout(loadingScreen, 800);
+
+    // intialize first worktab
     work_showTab(1);
+
+    // react-typed bio text
     var introElement = document.querySelector('.intro-type'); // Selects the first element with the class 'intro'
     if (introElement) {
         var typed = new Typed(introElement, {
@@ -13,6 +19,16 @@ window.onload = function() {
             backSpeed: 100,
             loop: true
         });
+    }
+}
+
+function loadingScreen() {
+    var loading = document.querySelector('.loading-background');
+    if (loading) {
+        loading.style.opacity = 0;
+        setTimeout(function() {
+            loading.remove();
+        }, 600);
     }
 }
 
