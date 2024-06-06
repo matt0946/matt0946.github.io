@@ -264,10 +264,18 @@ body {
 .headshot {
     border-radius: 50%;
     height: 150;
-    outline: 2px solid rgba(255, 255, 255, 0.349);
-    /*border: 2px solid rgb(255, 255, 255);*/
+    /*outline: 2px solid rgba(255, 255, 255, 0.349);*/
     border: 3px solid rgb(43, 50, 64);
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.headshot-background {
+    border-radius: 50%;
+    /*outline: 2px solid rgba(255, 255, 255, 0.349);*/
+    border-right: 3px solid rgb(253, 143, 0);
+    border-top: 3px solid rgb(253, 135, 0);
+    border-left: 3px solid rgb(253, 122, 0);
+
 }
 
 /* DRACULA LIKE THEME
