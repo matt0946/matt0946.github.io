@@ -42,6 +42,7 @@ function about_collapse(clickedElement, expandElement) {
         content.style.display = "none";
         //itemCount.style.color = "rgb(205, 96, 255)";
         itemCount.style.color = "rgb(253, 143, 0)";
+        itemCount.style.color = "rgb(194, 127, 224)";
         itemCount.textContent = "...";
         icon.classList.remove('fa-regular','fa-square-minus');
         icon.classList.add('fa-regular', 'fa-square-plus');

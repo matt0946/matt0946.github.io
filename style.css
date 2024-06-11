@@ -12,10 +12,11 @@
     line-height: 150px;
     font-family: sans-serif;
     font-size: 20px;
-    color: rgb(253, 143, 0);
+    color: rgb(217, 193, 228);
+
     letter-spacing: 4px;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgb(253, 143, 0);
+    text-shadow: 0 0 10px rgb(217, 193, 228);
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     z-index:2;
 }
@@ -28,8 +29,8 @@
     width: 100%;
     height: 100%;
     border: 3px solid transparent;
-    border-top: 3px solid rgb(253, 143, 0);
-    border-right: 3px solid rgb(253, 143, 0);
+    border-top: 3px solid rgb(217, 193, 228);
+    border-right: 3px solid rgb(217, 193, 228);
     border-radius: 50%;
     animation: animateC 2s linear infinite;
     z-index: 2;
@@ -54,10 +55,10 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: rgb(253, 143, 0);
+    background: rgb(217, 193, 228);
     top: -6px;
     right: -8px;
-    box-shadow: 0 0 20px rgb(253, 143, 0);
+    box-shadow: 0 0 20px rgb(217, 193, 228);
     z-index:2;
 }
 
@@ -272,10 +273,12 @@ body {
 .headshot-background {
     border-radius: 50%;
     /*outline: 2px solid rgba(255, 255, 255, 0.349);*/
-    border-right: 3px solid rgb(253, 143, 0);
-    border-top: 3px solid rgb(253, 135, 0);
-    border-left: 3px solid rgb(253, 122, 0);
 
+    border-right: 3px solid rgb(217, 193, 228);
+    border-top: 3px solid rgb(217, 193, 228);
+    border-left: 3px solid rgb(217, 193, 228);
+
+    box-shadow: 0 0 8px rgb(217, 193, 228);
 }
 
 /* DRACULA LIKE THEME
@@ -322,7 +325,8 @@ body {
 }
 
 .about-value {
-    color:rgb(253, 143, 0);
+    /*color:rgb(253, 143, 0);*/
+    color: rgb(194, 127, 224);
     display: inline-block;
 }
 
