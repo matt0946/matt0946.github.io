@@ -188,6 +188,11 @@
     line-height:50px;
     color:white;
     font-size: 25px;
+    text-shadow: 0 0 5px rgba(217, 193, 228);
+}
+
+.navbar-item-left i {
+    text-shadow: 0 0 5px rgba(217, 193, 228);
 }
 
 .section_ {
@@ -346,23 +351,25 @@ body {
 }
 
 .resume_button {
-    background-color: rgb(66, 140, 170);
+    box-shadow: 0px 0px 3px 3px rgb(217, 193, 228);
+    text-shadow: 0 0 3px rgb(217, 193, 228);
+    outline: 2px solid rgb(255, 255, 255);
+    /*background-color: rgb(66, 140, 170);*/
+    background-color: rgb(43, 50, 64);
     color: rgb(255, 255, 255);
     border-radius: 8px;
     height: 40px;
     width: 80px;
     font-size: 14px;
     font-weight: bold;
-    line-height: 40px;
-    display: inline-block;
-    margin-left: auto;
     border:none;
     transition: transform 0.3s ease;
     margin-right: 100px;
+    margin-top: 4px;
 }
 
 .resume_button:hover {
-    transform: translateY(-2px);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
