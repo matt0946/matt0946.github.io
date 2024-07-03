@@ -45,7 +45,7 @@ function about_collapse(clickedElement, expandElement) {
         // check if light mode is enabled
         var lightMode = document.querySelector('.dark-mode-container');
         if (lightMode.classList.contains('light-mode-active')) {
-            itemCount.style.color = "##f29e0b;";
+            itemCount.style.color = "#f29e0b";
         } else {
             itemCount.style.color = "rgb(194, 127, 224)";
         }
