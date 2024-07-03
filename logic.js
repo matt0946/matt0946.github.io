@@ -41,13 +41,19 @@ function about_collapse(clickedElement, expandElement) {
     if (content.style.display === "block" || content.style.display === "") {
         content.style.display = "none";
         //itemCount.style.color = "rgb(205, 96, 255)";
-        itemCount.style.color = "rgb(253, 143, 0)";
-        itemCount.style.color = "rgb(194, 127, 224)";
+        
+        // check if light mode is enabled
+        var lightMode = document.querySelector('.dark-mode-container');
+        if (lightMode.classList.contains('light-mode-active')) {
+            itemCount.style.color = "##f29e0b;";
+        } else {
+            itemCount.style.color = "rgb(194, 127, 224)";
+        }
+
         itemCount.textContent = "...";
         icon.classList.remove('fa-regular','fa-square-minus');
         icon.classList.add('fa-regular', 'fa-square-plus');
-        icon.style.color = "rgb(219, 206, 25)";
-        icon.style.color = "rgb(32, 172, 67)"
+        icon.style.color = "rgb(32, 172, 67)";
     } else {
         content.style.display = "block";
         if (expandElement == 1) {
@@ -197,14 +203,32 @@ function activateDarkMode() {
     var headshot = document.querySelector('.headshot');
     headshot.style.border = "3px solid rgb(43, 50, 64)"
 
+    var headshotBackground = document.querySelector('.headshot-background');
+    headshotBackground.style.borderRight = "3px solid rgb(217, 193, 228)";
+    headshotBackground.style.borderTop = "3px solid rgb(217, 193, 228)";
+    headshotBackground.style.borderLeft = "3px solid rgb(217, 193, 228)";
+    headshotBackground.style.boxShadow = "0 0 8px rgb(217, 193, 228)"
+
     // code-like bio section
     var about = document.querySelector('.about');
     //about.style.color = "white";
     about.style.backgroundColor = "rgba(40, 37, 37, 0.979)";
 
+    var aboutValues = document.querySelectorAll('.about-value');
+    aboutValues.forEach(function(values) {
+        values.style.color = "rgb(194, 127, 224)";
+    })
+
     var aboutRows = document.querySelectorAll('.about-row');
     aboutRows.forEach(function(row) {
         row.style.borderLeft = "1px solid rgb(73, 72, 62)";
+    })
+
+    var aboutItemCounts = document.querySelectorAll('.about-item-count');   
+    aboutItemCounts.forEach(function(itemCount, index) {
+        if (index != 0 && !itemCount.textContent.includes("items")) {
+            itemCount.style.color = "rgb(194, 127, 224)";
+        }
     })
 
     var bioCollapsible = document.querySelectorAll('.collapsible');
@@ -270,14 +294,16 @@ function activateLightMode() {
 
     var navName = document.querySelector('.navbar-name');
     navName.style.color = "black";
+    navName.style.textShadow = "0 0 5px #efbe75"
     
     var navNameIcon = document.querySelector('.navbar-item-left i');
     navNameIcon.style.color = "black";
+    navNameIcon.style.textShadow = "0 0 5px #efbe75" 
 
     var resumeButton = document.querySelector(".resume_button");
     resumeButton.style.backgroundColor = "#eee6d9";
-    resumeButton.style.boxShadow = "0 0 3px 3px rgb(217, 193, 228)";
-    resumeButton.style.textShadow = "0 0 3px rrgb(217, 193, 228)"
+    resumeButton.style.boxShadow = "0 0 3px 3px #efbe75";
+    resumeButton.style.textShadow = "0 0 3px #efbe75"
     resumeButton.style.outline = "2px solid rgb(0, 0, 0)";
     resumeButton.style.color = "black";
 
@@ -289,14 +315,32 @@ function activateLightMode() {
     var headshot = document.querySelector('.headshot');
     headshot.style.border = "3px solid #eee6d9"
 
+    var headshotBackground = document.querySelector('.headshot-background');
+    headshotBackground.style.borderRight = "3px solid #efbe75";
+    headshotBackground.style.borderTop = "3px solid #efbe75";
+    headshotBackground.style.borderLeft = "3px solid #efbe75";
+    headshotBackground.style.boxShadow = "0 0 8px #efbe75"
+
     // code-like bio section
     var about = document.querySelector('.about');
     //about.style.color = "white";
     about.style.backgroundColor = "white";
 
+    var aboutValues = document.querySelectorAll('.about-value');
+    aboutValues.forEach(function(values) {
+        values.style.color = "#f29e0b";
+    })
+
     var aboutRows = document.querySelectorAll('.about-row');
     aboutRows.forEach(function(row) {
         row.style.borderLeft = "1px solid rgba(51, 51, 51, 0.349)";
+    })
+
+    var aboutItemCounts = document.querySelectorAll('.about-item-count');
+    aboutItemCounts.forEach(function(itemCount, index) {
+        if (index != 0 && !itemCount.textContent.includes("items")) {
+            itemCount.style.color = "#f29e0b";
+        }
     })
 
     var bioCollapsible = document.querySelectorAll('.collapsible');

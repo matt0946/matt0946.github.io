@@ -252,7 +252,8 @@
 /* light mode ball*/
 .dark-mode-button input:checked ~ .slider::before {
     transform: translateX(48px);
-    background-color: #28292c;
+    /*background-color: #28292c;*/
+    background-color: #ee9b1e;
     box-shadow: none;
 }
 
@@ -741,5 +742,5 @@ body {
 
     color: #e6d8c3; /*work option backgrounds*/
 
-    color: #f5a925;
+    color: #f29e0b;
 }
