@@ -195,6 +195,83 @@
     text-shadow: 0 0 5px rgba(217, 193, 228);
 }
 
+/* Switch colors 
+    light = #d8dbe0;
+    dark  = #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+    */
+
+.dark-mode-button {
+    /*position: relative;*/
+    width: 50px;
+    padding-right: 130px;
+    padding-top: 3px;
+}   
+
+.dark-mode-button label {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    background-color: #28292c;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.dark-mode-button input {
+    position: absolute;
+    display: none;
+}
+
+.slider {
+    position: aboslute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.dark-mode-button input:checked ~ .slider {
+    background-color: #d8dbe0;
+}
+
+/* dark mode ball */
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 32px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: inset 13px -2px 0px 0px #d8dbe0;
+    background-color: #28292c;
+    transition: 0.3s;
+}
+
+/* light mode ball*/
+.dark-mode-button input:checked ~ .slider::before {
+    transform: translateX(48px);
+    background-color: #28292c;
+    box-shadow: none;
+}
+
+.dark-mode-buttton a {
+    position: relative;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    top: 150px;
+    left: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(27, 129, 112);
+    font-weight: bold;
+    text-align: center;
+}
+
+.dark-mode-button a:hover {
+    color: rgb(24, 94, 82);
+}
+
 .section_ {
     transform: translateY(20px);
     opacity: 0;
@@ -364,7 +441,7 @@ body {
     font-weight: bold;
     border:none;
     transition: transform 0.3s ease;
-    margin-right: 100px;
+    margin-right: 50px;
     margin-top: 4px;
 }
 
@@ -457,10 +534,21 @@ body {
     font-style: bold;
 }
 
-.workexperience {
+.workexperience{
     display: flex;
     padding: 10px;
     background-color: rgb(33, 38, 49);
+    list-style-type: none;
+    line-height: 1;
+    font-size:15px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add this line */
+    border-radius: 5%;
+}
+
+.workexperience.light {
+    display: flex;
+    padding: 10px;
+    background-color: #e6d8c3;
     list-style-type: none;
     line-height: 1;
     font-size:15px;
@@ -528,6 +616,10 @@ body {
 
 .active-tab {
     background-color: rgba(46, 56, 100, 0.747); /* Or any other style you want to apply to the active tab */
+}
+
+.active-tab.light {
+    background-color: #dfc18d;
 }
 
 .project-outterbox {
@@ -639,4 +731,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* for color testing purposes*/
+.color-test {
+    color: #E5D3B3; /*document background*/
+    
+    color: #eee6d9; /*section backgrounds*/
+
+    color: #e6d8c3; /*work option backgrounds*/
+
+    color: #f5a925;
 }

@@ -143,3 +143,209 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+function toggleDarkMode() {
+    const darkModeContainer = document.querySelector('.dark-mode-container');
+    
+    if (darkModeContainer) {
+        darkModeContainer.classList.toggle('light-mode-active');
+        
+        if (darkModeContainer.classList.contains('light-mode-active')) {
+            darkModeContainer.style.backgroundColor = "#d8dbe0"; // Light mode color
+            darkModeContainer.style.backgroundColor = "#E5D3B3";
+            activateLightMode();
+            
+        } else {
+            darkModeContainer.style.backgroundColor = "#28292c"; // Dark mode color
+            activateDarkMode();
+        }
+    }
+}
+
+function activateDarkMode() {
+    // main background
+    var html = document.querySelector('html');
+    html.style.background = "rgb(27, 32, 41)";
+
+    // nav bar section
+    var navbar = document.querySelector(".navbar-container");
+    navbar.style.backgroundColor = "rgb(43, 50, 64)";
+    
+    var navItems = document.querySelectorAll('.navbar-item a');
+    navItems.forEach(function(navItem) {
+        navItem.style.color = "white";
+    })
+
+    var navName = document.querySelector('.navbar-name');
+    navName.style.color = "white";
+    
+    var navNameIcon = document.querySelector('.navbar-item-left i');
+    navNameIcon.style.color = "white";
+
+    var resumeButton = document.querySelector(".resume_button");
+    resumeButton.style.backgroundColor = "rgb(43, 50, 64)";
+    resumeButton.style.boxShadow = "0 0 3px 3px rgb(217, 193, 228)";
+    resumeButton.style.textShadow = "0 0 3px rrgb(217, 193, 228)"
+    resumeButton.style.outline = "2px solid rgb(255, 255, 255)";
+    resumeButton.style.color = "white";
+
+    // intro section
+    var introBox = document.querySelector('.intro-innerbox');
+    introBox.style.backgroundColor = "rgb(43, 50, 64)"
+    introBox.style.color = "white";
+
+    var headshot = document.querySelector('.headshot');
+    headshot.style.border = "3px solid rgb(43, 50, 64)"
+
+    // code-like bio section
+    var about = document.querySelector('.about');
+    //about.style.color = "white";
+    about.style.backgroundColor = "rgba(40, 37, 37, 0.979)";
+
+    var aboutRows = document.querySelectorAll('.about-row');
+    aboutRows.forEach(function(row) {
+        row.style.borderLeft = "1px solid rgb(73, 72, 62)";
+    })
+
+    var bioCollapsible = document.querySelectorAll('.collapsible');
+    bioCollapsible.forEach(function(collapsible) {
+        collapsible.style.backgroundColor = "rgba(40, 37, 37, 0.979)";
+    })
+
+    // work section
+    var workOutterBox = document.querySelector('.work-outterbox');
+    workOutterBox.style.backgroundColor = "rgb(33, 38, 49)";
+    workOutterBox.style.color = "white";
+
+    var worktabOptions = document.querySelectorAll('.workexperience');
+    worktabOptions.forEach(function(worktabOption) {
+        //worktabOption.style.backgroundColor = "#e6d8c3";
+        worktabOption.classList.remove("light");
+    })
+    
+    var workDescription = document.querySelector(".work-innerbox-right");
+    workDescription.style.backgroundColor = "rgb(43, 50, 64)";
+    workDescription.style.color = "white";
+
+    var workDetails = document.querySelectorAll(".work-details");
+    workDetails.forEach(function(workDetail) {
+        workDetail.style.color = "rgba(255, 255, 255, 0.349)";
+    })
+
+    var technologyBoxes = document.querySelectorAll(".technology-box");
+    technologyBoxes.forEach(function(technologyBox) {
+        technologyBox.style.backgroundColor = "rgb(33, 38, 49)";
+        technologyBox.style.color = "white";
+    })
+
+    // projects section
+    var projectsOutterBox = document.querySelector('.project-outterBox');
+    projectsOutterBox.style.backgroundColor = "rgb(33, 38, 49)";
+    projectsOutterBox.style.color = "white"; 
+
+    var projectOptions = document.querySelectorAll('.project-collapsible');
+    projectOptions.forEach(function(projectOption) {
+        projectOption.style.backgroundColor = "rgb(43, 50, 64)";
+    })
+    
+    var sidebarItems = document.querySelectorAll('.sidebar-item a')
+    sidebarItems.forEach(function(sidebarItem) {
+        sidebarItem.style.color = "rgba(217, 193, 228, 0.699)";
+    })
+}
+
+function activateLightMode() {
+    // main background
+    var html = document.querySelector('html');
+    html.style.background = "#E5D3B3";
+
+    // nav bar section
+    var navbar = document.querySelector(".navbar-container");
+    navbar.style.backgroundColor = "#eee6d9";
+    
+    var navItems = document.querySelectorAll('.navbar-item a');
+    navItems.forEach(function(navItem) {
+        navItem.style.color = "black";
+    })
+
+    var navName = document.querySelector('.navbar-name');
+    navName.style.color = "black";
+    
+    var navNameIcon = document.querySelector('.navbar-item-left i');
+    navNameIcon.style.color = "black";
+
+    var resumeButton = document.querySelector(".resume_button");
+    resumeButton.style.backgroundColor = "#eee6d9";
+    resumeButton.style.boxShadow = "0 0 3px 3px rgb(217, 193, 228)";
+    resumeButton.style.textShadow = "0 0 3px rrgb(217, 193, 228)"
+    resumeButton.style.outline = "2px solid rgb(0, 0, 0)";
+    resumeButton.style.color = "black";
+
+    // intro section
+    var introBox = document.querySelector('.intro-innerbox');
+    introBox.style.backgroundColor = "#eee6d9"
+    introBox.style.color = "black";
+
+    var headshot = document.querySelector('.headshot');
+    headshot.style.border = "3px solid #eee6d9"
+
+    // code-like bio section
+    var about = document.querySelector('.about');
+    //about.style.color = "white";
+    about.style.backgroundColor = "white";
+
+    var aboutRows = document.querySelectorAll('.about-row');
+    aboutRows.forEach(function(row) {
+        row.style.borderLeft = "1px solid rgba(51, 51, 51, 0.349)";
+    })
+
+    var bioCollapsible = document.querySelectorAll('.collapsible');
+    bioCollapsible.forEach(function(collapsible) {
+        collapsible.style.backgroundColor = "white";
+    })
+
+    // work section
+    var workOutterBox = document.querySelector('.work-outterbox');
+    workOutterBox.style.backgroundColor = "#e6d8c3";
+    workOutterBox.style.color = "black";
+
+    var worktabOptions = document.querySelectorAll('.workexperience');
+    worktabOptions.forEach(function(worktabOption) {
+        //worktabOption.style.backgroundColor = "#e6d8c3";
+        worktabOption.classList.add("light");
+    })
+    
+    var workDescription = document.querySelector(".work-innerbox-right");
+    workDescription.style.backgroundColor = "#eee6d9";
+    workDescription.style.color = "black";
+
+    var workDetails = document.querySelectorAll(".work-details");
+    workDetails.forEach(function(workDetail) {
+        workDetail.style.color = "rgba(51, 51, 51, 0.349)";
+    })
+
+    var technologyBoxes = document.querySelectorAll(".technology-box");
+    technologyBoxes.forEach(function(technologyBox) {
+        technologyBox.style.backgroundColor = "#e6d8c3";
+        technologyBox.style.color = "black";
+    })
+
+    // projects section
+    var projectsOutterBox = document.querySelector('.project-outterBox');
+    projectsOutterBox.style.backgroundColor = "#e6d8c3";
+    projectsOutterBox.style.color = "black"; 
+
+    var projectOptions = document.querySelectorAll('.project-collapsible');
+    projectOptions.forEach(function(projectOption) {
+        projectOption.style.backgroundColor = "#eee6d9";
+    })
+    
+    // contact sidebar section
+    var sidebarContainer = document.querySelector('.sidebar-container');
+    //sidebarContainer.style.background = "black";
+
+    var sidebarItems = document.querySelectorAll('.sidebar-item a')
+    sidebarItems.forEach(function(sidebarItem) {
+        sidebarItem.style.color = "black";
+    })
+}
