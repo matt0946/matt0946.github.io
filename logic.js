@@ -155,6 +155,13 @@ function toggleDarkMode() {
     
     if (darkModeContainer) {
         darkModeContainer.classList.toggle('light-mode-active');
+        const navbarItems = document.querySelectorAll('.navbar-item')
+        navbarItems.forEach(function(navItems) {
+            navItems.classList.toggle('light');
+        })
+
+        const sidebarContainer = document.querySelector(".sidebar-container");
+        sidebarContainer.classList.toggle('light');
         
         if (darkModeContainer.classList.contains('light-mode-active')) {
             darkModeContainer.style.backgroundColor = "#d8dbe0"; // Light mode color
@@ -184,14 +191,16 @@ function activateDarkMode() {
 
     var navName = document.querySelector('.navbar-name');
     navName.style.color = "white";
+    navName.style.textShadow = "0 0 5px rgba(217, 193, 228)"
     
     var navNameIcon = document.querySelector('.navbar-item-left i');
     navNameIcon.style.color = "white";
+    navNameIcon.style.textShadow = "0 0 5px rgba(217, 193, 228)"
 
     var resumeButton = document.querySelector(".resume_button");
     resumeButton.style.backgroundColor = "rgb(43, 50, 64)";
     resumeButton.style.boxShadow = "0 0 3px 3px rgb(217, 193, 228)";
-    resumeButton.style.textShadow = "0 0 3px rrgb(217, 193, 228)"
+    resumeButton.style.textShadow = "0 0 3px rgb(217, 193, 228)"
     resumeButton.style.outline = "2px solid rgb(255, 255, 255)";
     resumeButton.style.color = "white";
 
@@ -304,8 +313,8 @@ function activateLightMode() {
     resumeButton.style.backgroundColor = "#eee6d9";
     resumeButton.style.boxShadow = "0 0 3px 3px #efbe75";
     resumeButton.style.textShadow = "0 0 3px #efbe75"
-    resumeButton.style.outline = "2px solid rgb(0, 0, 0)";
-    resumeButton.style.color = "black";
+    resumeButton.style.outline = "2px solid #ee9b1e";
+    resumeButton.style.color = "#ee9b1e";
 
     // intro section
     var introBox = document.querySelector('.intro-innerbox');
@@ -390,6 +399,6 @@ function activateLightMode() {
 
     var sidebarItems = document.querySelectorAll('.sidebar-item a')
     sidebarItems.forEach(function(sidebarItem) {
-        sidebarItem.style.color = "black";
+        sidebarItem.style.color = "#ee9b1e";
     })
 }

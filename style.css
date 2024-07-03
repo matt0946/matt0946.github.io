@@ -110,6 +110,16 @@
     height: 100%; /* Height of the line */
 }
 
+.sidebar-container.light:after {
+    content: "";
+    position: absolute;
+    width: 1px; /* Width of the line */
+    background: #ee9b1e; /* Color of the line */
+    top: 100%; /* Position the line under the container */
+    left: 50%; /* Center the line */
+    height: 100%; /* Height of the line */
+}
+
 .sidebar-container {
     position: relative;
 }
@@ -165,6 +175,11 @@
 .navbar-item a:hover {
     transform: scale(1.05);
     border-bottom: 2px solid rgba(217, 193, 228, 0.699);
+}
+
+.navbar-item.light a:hover {
+    transform: scale(1.05);
+    border-bottom: 2px solid #efbe75;
 }
 
 .navbar-item a.active {
@@ -572,6 +587,12 @@ body {
     cursor: pointer;
 }
 
+.workexperience.light:hover {
+    background-color: #dfc18d;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
 .work-header {
     display: flex;
     align-items: start;
@@ -620,7 +641,7 @@ body {
 }
 
 .active-tab.light {
-    background-color: #dfc18d;
+    background-color: #ee9b1e;
 }
 
 .project-outterbox {
