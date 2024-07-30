@@ -247,7 +247,7 @@
   height: 40px;
   background-color: #28292c;
   border-radius: 50px;
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
 .dark-mode-button input {
@@ -502,7 +502,7 @@ body {
 
 .resume_button:hover {
   transform: scale(1.05);
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
 .icon {
@@ -522,14 +522,14 @@ body {
   text-decoration: none;
   /*color:rgb(219, 206, 25);*/
   color: rgb(32, 172, 67);
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible-all {
   background-color: #eee;
   color: #444;
-  /*cursor: pointer;*/
+  cursor: pointer;
   border: none;
   text-align: left;
   outline: none;
@@ -627,13 +627,13 @@ body {
     0.363
   ); /* Replace with your desired color */
   transform: translateY(-2px); /* move tab 10px upward */
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
 .workexperience.light:hover {
   background-color: #dfc18d;
   transform: translateY(-2px);
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
 .work-header {
